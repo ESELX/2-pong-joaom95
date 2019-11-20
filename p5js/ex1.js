@@ -7,7 +7,10 @@ let points;
 let vel;
 
 function setup() {
-  createCanvas(300, 200);
+  var cnv = createCanvas(200, 500);
+  var x = (windowWidth - width) / 2;
+  var y = (windowHeight - height) / 2;
+  cnv.position(x, y);
   posX = random(width);
   posY = 30;
   vel = 5;
@@ -15,9 +18,10 @@ function setup() {
   velY = vel;
   padWidth = 80;
   padHeight = 8;
-  diamBall = 15;
+  diamBall = 13;
   points=0;
 }
+
 
 function draw() {
   //desenha
