@@ -16,8 +16,8 @@ function setup() {
   vel = 5;
   velX = vel;
   velY = vel;
-  padWidth = 80;
-  padHeight = 8;
+  padWidth = 60;
+  padHeight = 5;
   diamBall = 13;
   points=0;
 }
