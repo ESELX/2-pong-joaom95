@@ -13,24 +13,26 @@ function setup() {
   cnv.position(x, y);
   posX = random(width);
   posY = 30;
-  vel = 5;
+  vel = 7;
   velX = vel;
   velY = vel;
   padWidth = 60;
   padHeight = 5;
-  diamBall = 13;
+  diamBall = 15;
   points=0;
 }
 
 
 function draw() {
   background(155, 0, 50);
+
   text(points,20,20);
   posX = posX + velX;
   posY = posY + velY;
   ellipse(posX,posY,diamBall);
+  fill (255);
   rectMode(CENTER);
-  rect(mouseX,height-10,padWidth,padHeight);
+  rect(mouseX,height-20,padWidth,padHeight);
 
   //calcula
   if (posX-diamBall/2 <= 0 || posX+diamBall/2 >= width) {
