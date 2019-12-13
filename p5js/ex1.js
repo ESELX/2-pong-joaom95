@@ -24,8 +24,15 @@ function setup() {
 
 
 function draw() {
-  //desenha
-  background linear-gradient(to bottom, #cc0000 0%, #000000 90%);
+    noStroke();
+    colorMode(100);
+    for (let i = 0; i < 500; i++) {
+    for (let j = 0; j < 1000; j++) {
+      stroke(i, j, 100);
+      point(i, j);
+    }
+   }
+
   text(points,20,20);
   posX = posX + velX;
   posY = posY + velY;
