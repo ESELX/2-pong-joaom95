@@ -24,7 +24,7 @@ function setup() {
 
 
 function draw() {
-  background(153, 0, 51);
+  background(155, 0, 50);
   text(points,20,20);
   posX = posX + velX;
   posY = posY + velY;
