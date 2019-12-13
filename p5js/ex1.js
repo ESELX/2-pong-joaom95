@@ -24,15 +24,7 @@ function setup() {
 
 
 function draw() {
-    noStroke();
-    colorMode(100);
-    for (let i = 0; i < 500; i++) {
-    for (let j = 0; j < 1000; j++) {
-      stroke(i, j, 100);
-      point(i, j);
-    }
-   }
-
+  background(153, 0, 51);
   text(points,20,20);
   posX = posX + velX;
   posY = posY + velY;
