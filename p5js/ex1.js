@@ -25,7 +25,7 @@ function setup() {
 
 function draw() {
   //desenha
-  background(220);
+  background linear-gradient(to bottom, #cc0000 0%, #000000 90%);
   text(points,20,20);
   posX = posX + velX;
   posY = posY + velY;
