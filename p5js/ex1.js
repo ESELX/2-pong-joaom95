@@ -25,8 +25,8 @@ function setup() {
 
 function draw() {
   background(155, 0, 50);
-
-  text(points,20,20);
+  textFont //('ESCREVER TIPO DE LETRA')
+  text(points,30,30);
   posX = posX + velX;
   posY = posY + velY;
   ellipse(posX,posY,diamBall);
