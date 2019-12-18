@@ -17,7 +17,7 @@ function setup() {
   velX = vel;
   velY = vel;
   padWidth = 60;
-  padHeight = 5;
+  padHeight = 15;
   diamBall = 15;
   points=0;
 }
@@ -32,7 +32,7 @@ function draw() {
   ellipse(posX,posY,diamBall);
   fill (255);
   rectMode(CENTER);
-  rect(mouseX,height-20,padWidth,padHeight);
+  rect(mouseX,height-25,padWidth,padHeight);
 
   //calcula
   if (posX-diamBall/2 <= 0 || posX+diamBall/2 >= width) {
